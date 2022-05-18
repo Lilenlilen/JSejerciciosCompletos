@@ -39,3 +39,15 @@ const puntuaciones = [
     puntos: [2, 3, 3, 4],
   },
 ];
+const puntosTotales = puntuaciones.map((equipo) => {
+  return equipo.puntos.reduce((previousValue, puntos) => {
+    return previousValue + puntos;
+  }, 0);
+});
+
+console.log(puntosTotales);
+
+const ordenados = puntosTotales.sort((a, b) => {
+  return a - b;
+});
+console.log(ordenados);
