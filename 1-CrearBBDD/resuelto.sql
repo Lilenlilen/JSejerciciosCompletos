@@ -1,0 +1,15 @@
+CREATE DATABASE ejercicio1;
+USE ejercicio1;
+
+CREATE TABLE usuarios (
+id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+dni VARCHAR(9),
+tlf INT UNSIGNED,
+email VARCHAR(150),
+nombre VARCHAR(50),
+apellido VARCHAR(100),
+pais VARCHAR(100),
+cp INT UNSIGNED,
+direccion1 VARCHAR(150),
+direccion2 VARCHAR(150)
+);
